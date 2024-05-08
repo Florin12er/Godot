@@ -1,0 +1,51 @@
+#+title: Main
+* Table of content :TOC:
+- [[#godot][Godot:]]
+  - [[#how-to-run-a-game][How to run a game:]]
+  - [[#buttons][Buttons:]]
+  - [[#programming-languages][Programming Languages:]]
+  - [[#csharpc][CSHARP(C#):]]
+  - [[#gdscript][GDScript:]]
+  - [[#sprites][Sprites:]]
+
+* Godot:
+** How to run a game:
+- make a new 2d or 3d node
+- run the game by pressing the run button
+
+** Buttons:
+- you can add buttons to your node using the add button and add
+  text to it in the left of the screen.
+** Programming Languages:
+- you can use c# and gdscript tools for neovim already configured to work
+** CSHARP(C#):
+1. Performance: C# is generally faster than GDScript due to its compiled nature and optimizations provided by .NET runtime.
+2. Ecosystem: C# has a large ecosystem with extensive libraries and frameworks like .NET Core, Unity, and Xamarin. It's widely
+   used in enterprise development and game development (via Unity).
+3. Syntax: C# syntax is similar to Java and C++,
+   making it familiar to developers coming from those backgrounds. It's statically typed, which can help catch errors at compile-time.
+4. Tooling: C# has robust tooling support with Visual Studio and Visual Studio Code offering powerful IDE features
+   like IntelliSense, debugging, and refactoring tools.
+5. Cross-platform: With .NET Core, C# can be used to develop
+   cross-platform applications, although Unity remains the primary choice for game development.
+
+** GDScript:
+
+1. Ease of Use: GDScript is designed specifically for use with the Godot game engine. It's dynamically typed and
+   has a simpler syntax compared to C#, which can be more accessible for beginners and smaller teams.
+
+2. Integration with Godot: GDScript integrates seamlessly with Godot Engine, providing direct access to engine features and nodes.
+
+3. Performance: While not as performant as C#, GDScript's performance is generally acceptable for most
+   2D and some 3D games. It's optimized for use within the Godot Engine.
+
+4. Scene Control: GDScript is well-suited for controlling game logic, managing scenes,
+   and handling events within the Godot Engine ecosystem.
+
+5. Community and Learning Resources: Godot and GDScript have a growing community and a
+   wealth of tutorials and resources specifically tailored to using GDScript with Go
+
+** Sprites:
+- you can sprites with the add button
+- sprites are your the things your are seing in the game
+- you can make sprites with tools like GIMP, Adobe, Krita, Inkscape

@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgy72vpvvef3p"]
+
+[ext_resource type="Script" path="res://world.gd" id="1_4na22"]
+[ext_resource type="Texture2D" uid="uid://ddv4fpeq0ctx2" path="res://sunny-land/assets/sprites/press-enter-text.png" id="2_woq6x"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_4na22")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 417.0
+offset_top = 156.0
+offset_right = 658.0
+offset_bottom = 327.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Button"]
+position = Vector2(122, 81)
+scale = Vector2(1.34539, 1.97917)
+texture = ExtResource("2_woq6x")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 15.0
+offset_top = 21.0
+offset_right = 114.0
+offset_bottom = 57.0
+text = "hello"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

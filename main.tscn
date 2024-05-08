@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3y5my1arnfnl"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_5tqkl"]
+
+[sub_resource type="FontFile" id="FontFile_g01to"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/20/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/20/0 = Vector2(0, 0)
+
+[sub_resource type="Theme" id="Theme_pynyv"]
+default_base_scale = 5.1
+default_font = SubResource("FontFile_g01to")
+default_font_size = 20
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_5tqkl")
+
+[node name="play" type="Button" parent="."]
+offset_left = 75.0
+offset_top = 169.0
+offset_right = 391.0
+offset_bottom = 353.0
+theme = SubResource("Theme_pynyv")
+text = "play"
+
+[node name="quit" type="Button" parent="."]
+offset_left = 613.0
+offset_top = 167.0
+offset_right = 858.0
+offset_bottom = 357.0
+text = "quit"
+
+[connection signal="pressed" from="play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
